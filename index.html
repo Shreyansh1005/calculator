@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator Display</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="calculator">
+        <div class="display">
+            <!-- Calculator display will appear here -->
+            0
+        </div>
+        <div class="buttons">
+            <div class="button" onclick="addToDisplay('1')">1</div>
+            <div class="button" onclick="addToDisplay('2')">2</div>
+            <div class="button" onclick="addToDisplay('3')">3</div>
+            <div class="button" onclick="addToDisplay('+')">+</div>
+            <div class="button" onclick="addToDisplay('4')">4</div>
+            <div class="button" onclick="addToDisplay('5')">5</div>
+            <div class="button" onclick="addToDisplay('6')">6</div>
+            <div class="button" onclick="addToDisplay('-')">-</div>
+            <div class="button" onclick="addToDisplay('7')">7</div>
+            <div class="button" onclick="addToDisplay('8')">8</div>
+            <div class="button" onclick="addToDisplay('9')">9</div>
+            <div class="button" onclick="addToDisplay('*')">*</div>
+            <div class="button" onclick="addToDisplay('.')">.</div>
+            <div class="button" onclick="addToDisplay('0')">0</div>
+            <div class="button" onclick="calculate()">=</div>
+            <div class="button" onclick="addToDisplay('/')">/</div>
+            <div class="button" onclick="clearDisplay('C')">C</div>
+            <div class="button" onclick="clearDisplay('AC')">AC</div>
+            <label class="switch">
+                <input type="checkbox" id="toggleDivs">
+                <span class="slider"></span>
+            </label>
+            <div class="button" onclick="addToDisplay('(')">(</div>
+            <div class="button" onclick="addToDisplay(')')">)</div>
+            
+            
+        </div>
+        <div id="divContainer" >
+            <!-- Buttons will be added here dynamically -->
+        </div>
+        
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
